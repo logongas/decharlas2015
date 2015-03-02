@@ -32,7 +32,7 @@ function IssueListController($scope,issueRepository) {
             name:"Usuario"
         }        
     ];
-    $scope.orderProperty="number"
+    $scope.orderProperty="number";
     
     
     $scope.find=function() {
@@ -42,7 +42,7 @@ function IssueListController($scope,issueRepository) {
         },function(response) {
             alert("Fallo la petición:" + response.status);
         });
-    }
+    };
     
     $scope.$watch("issueState",function(newIssueState,oldIssueState) {
         if (newIssueState===oldIssueState) {
@@ -51,7 +51,7 @@ function IssueListController($scope,issueRepository) {
         
         $scope.find();
         
-    })
+    });
     
     $scope.find();
     
