@@ -2,7 +2,7 @@
 IssueListController.$inject=['$scope','issueRepository'];
 function IssueListController($scope,issueRepository) {
     
-    $scope.issuesStates=[
+    $scope.issueStates=[
         {
             id:"open",
             name:"Abiertos"
